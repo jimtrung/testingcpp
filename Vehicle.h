@@ -1,5 +1,6 @@
-include <iostream>
+#include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class Vehicle
@@ -7,35 +8,21 @@ class Vehicle
     public:
     Vehicle() {}
 
-    Vehicle(string mn): modelName(mn) {}
+    Vehicle(string mn) {}
 
-    void setModelName(string mn) {
-        modelName = mn;
-    }
+    void setModelName(string mn) {}
 
-    string getModelName() {
-        return modelName;
-    }
+    string getModelName() {}
 
-    void setOwnerName(string on) {
-        ownerName = on;
-    }
+    void setOwnerName(string on) {}
 
-    string getOwnerName() {
-        return ownerName;
-    }
+    string getOwnerName() {}
 
-    void setLicensePlate(string lp) {
-        licensePlate = lp;
-    }
+    void setLicensePlate(string lp) {}
 
-    string getLicensePlate() {
-        return licensePlate;
-    }
+    string getLicensePlate() {}
 
-    void run() {
-        cout << modelName << " is running...!\n";
-    }
+    void run() {}
 
     protected:
     string modelName;
